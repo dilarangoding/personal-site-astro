@@ -8,7 +8,7 @@ type Props = HeadTags;
 const { title, description, noindex, og } = Astro.props;
 
 const DEFAULT_TITLE_PAGE = "Riyon Aryono";
-const DEFAULT_DESCRIPTION_PAGE = "Seseorang pendengar Efek Rumah Kaca";
+const DEFAULT_DESCRIPTION_PAGE = "Pendengar Efek Rumah Kaca";
 const DEFAULT_URL_SITE = SITE_URL;
 
 const openGraph = {
@@ -39,7 +39,7 @@ const openGraph = {
     }}
     extend={{
       link: [
-        { rel: "icon", href: "/favicon.ico" },
+        { rel: "icon", href: "/favicon.svg" },
         { rel: "sitemap", href: "/sitemap-index.xml" },
       ],
       meta: [

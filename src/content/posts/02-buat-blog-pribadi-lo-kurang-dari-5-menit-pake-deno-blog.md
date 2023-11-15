@@ -4,7 +4,7 @@ description: Cara buat blog markdown menggunakan deno blog dan deploy ke Deno De
 author: Riyon Aryono
 publishedAt: 2023-04-18
 slug: buat-blog-pribadi-lo-kurang-dari-5-menit-pake-deno-blog
-ogImage: /public/img/pic-1-tutorial-deno.png
+ogImage: /img/pic-1-tutorial-deno.png
 isPublish: true
 ---
 
@@ -12,7 +12,7 @@ Suatu hari, gue lagi ngulik Node.Js, terus gue nemu repo punyanya si bapak Ryan 
 
 \*btw node itu kalo dibalik jadi deno
 
-![](/public/img/pic-1-tutorial-deno.png)
+![](/img/pic-1-tutorial-deno.png)
 
 Lo bisa cek repo gue [disini](https://github.com/dilarangoding/my-blog)
 
@@ -43,7 +43,7 @@ curl -fsSL https://deno.land/x/install/install.sh | sh
 
 Nah, tinggal lo tunggu sebentar. Buat ngecek apakah Deno udah terinstall di mesin lo, lo bisa ketik perintah ini:
 
-![](/public/img/pic-2-deno-version.png)
+![](/img/pic-2-deno-version.png)
 
 Kalo muncul seperti gambar di atas, berarti Deno udah terinstall di mesin komputer lo.
 
@@ -55,13 +55,13 @@ Setelah lo install Deno di mesin lo, sekarang lo juga perlu install modul Deno B
 deno run -r --allow-read --allow-write https://deno.land/x/blog/init.ts tulisin-nama-blog-lo/
 ```
 
-![](/public/img/pic-3-install-deno-blog.png)
+![](/img/pic-3-install-deno-blog.png)
 
 ## Struktur Folder Deno Blog
 
 Hal yang paling gue suka dari Deno Blog adalah struktur folder yang simpel. Lo cuma butuh 4 file aja buat bikin blog lo sendiri.
 
-![](/public/img/pic-4-struktur-file-deno.png)
+![](/img/pic-4-struktur-file-deno.png)
 
 Sekarang, mari kita pahami masing-masing file di atas:
 
@@ -78,11 +78,11 @@ Sekarang, lo bisa ngejalanin blog di komputer lokal lo dengan cara ketik perinta
 deno task dev
 ```
 
-![](/public/img/pic-5-deno-run.png)
+![](/img/pic-5-deno-run.png)
 
 Setelah menjalankan perintah di atas, lo bisa mengakses blog lo secara lokal melalui http://localhost:8000/ dan tampilannya akan seperti ini:
 
-![](/public/img/pic-6-priview-deno-loca.png)
+![](/img/pic-6-priview-deno-loca.png)
 
 Dengan menjalankan perintah di atas, lo dapat menguji dan melihat tampilan blog lo secara lokal sebelum mendeploynya ke server Deno.
 
@@ -122,7 +122,7 @@ blog({
 
 Kustom Konfigurasi
 
-![](/public/img/pic-7-deno-custom.png)
+![](/img/pic-7-deno-custom.png)
 
 Lo dapat menyesuaikan konfigurasi ini dengan mengganti nilai-nilai seperti title, description, avatar, dan lainnya sesuai dengan preferensi lo. Lo juga bisa menambahkan kode kustom di dalamnya untuk mengatur penampilan blog lo lebih lanjut. Misalnya:
 
@@ -228,7 +228,7 @@ export function Footer() {
 
 Untuk membuat artikel menggunakan format Markdown dalam proyek Deno Blog, Lo perlu mengikuti struktur yang sesuai dengan format front matter (metadata) dan konten artikel. Berikut adalah contoh struktur artikel dalam format Markdown:
 
-![](/public/img/struktur.png)
+![](/img/struktur.png)
 
 ```javascript
 ---
@@ -256,19 +256,19 @@ Sekarang, setelah semua langkah tersebut selesai, saatnya untuk mendeploy blog l
 
 Langkah pertama, lo kunjungi [Deno Deploy](https://deno.com/deploy). Jika lo belum punya akun, silakan lo buat akun terlebih dahulu. Jika sudah memiliki akun, langsung saja login ke akun Deno Deploy lo
 
-![](/public/img/pic-8-step-0.png)
+![](/img/pic-8-step-0.png)
 
 ### Buat Project Baru
 
 Setelah login, lo akan diarahkan ke dashboard Deno. Di sana, lo bisa klik tombol 'New Project'.
 
-![](/public/img/step-1.png)
+![](/img/step-1.png)
 
 ### Konfigurasi repo github
 
 Setelah lo mengklik 'New Project', lo akan diarahkan ke langkah konfigurasi yang melibatkan pengaturan repo GitHub dan variabel lingkungan (environment variable).
 
-![](/public/img/step-2.png)
+![](/img/step-2.png)
 
 1. Pilih repo GitHub dari proyek blog lo.
 2. Setelah lo memilih repo, pilih branch yang sesuai, dan pilih file `main.tsx`.
@@ -280,11 +280,11 @@ Setelah lo mengklik 'New Project', lo akan diarahkan ke langkah konfigurasi yang
 
 Setelah menyelesaikan konfigurasi di atas, website lo sudah dapat diakses, dan orang lain juga dapat mengaksesnya untuk memeriksanya. Lo cukup klik tombol 'View' di bagian atas kanan.
 
-![](/public/img/pic-9-dash-project.png)
+![](/img/pic-9-dash-project.png)
 
 Lo juga bisa menyesuaikan domain milik lo sendiri, asalkan lo sudah membeli domain tersebut terlebih dahulu. Caranya, pergi ke menu 'Settings,' lalu scrol ke bawah hingga menemukan bagian 'Domain.' Setelah itu, klik tombol 'Add Domain.' Lo akan diminta untuk mengubah DNS record dari domain yang lo miliki. Setelah lo mengubahnya, jangan lupa untuk mengklik 'Validate'.
 
-![](/public/img/pic-10-custom-domain.png)
+![](/img/pic-10-custom-domain.png)
 
 Selamat, blog lo sudah dipublikasikan! Oh, juga buat lo yang menggunakan teks editor VS Code, gue punya tip buat lo. Lo bisa menggunakan ekstensi [FrontMatter](https://frontmatter.codes/docs) untuk mempermudah saat lo membuat file Markdown. Dan yaudah gitu aja.
 

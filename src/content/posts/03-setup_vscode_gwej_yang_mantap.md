@@ -72,7 +72,7 @@ Gue mau VS Code gue lebih clean lagi dan lagi, cuma ini ga gua sarinin buat lo p
 
 nah settingan itu semua bisa lo ganti di _settings.json_. Selanjut nya gue mau bahas tema sama font yang gue pake. Gue sering banget ganti-ganti tema dan font sampe akhir nya ga ngoding-ngoding, cuma sekarang gue udah lebih nyaman sama tema dan font yang gue pake.
 
-![](/posts/img/setup-vscode.PNG)
+![](/img/setup-vscode.PNG)
 
 Gue pake tema Material Deep Ocean, dan untuk font gue pake font Fira Code. Gue juga aktifin font ligatures biar VS Code gue lebih mantap lagi. Lo bisa liat setinggan yang gue pake dibawah ini
 
